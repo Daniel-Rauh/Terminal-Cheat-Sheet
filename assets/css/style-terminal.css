@@ -8,10 +8,27 @@ body{
 }
 main{
     background: #ABB8C3;
+    position: relative;
+}
+.clippy{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    color: #052240;
+    background: #f6f4a5;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1vh 2%;
+    border: 2px solid #09478a;
+    border-radius: 10%;
+}
+.clippy:hover{
+    box-shadow: 0px 0px 4px 2px #09478a;
 }
 nav{
     background: #ABB8C3;
-    height: 5vh;
+    height: 5.5vh;
     position: fixed;
     width: 100%;
     border-bottom: 2px solid #09478a;
@@ -26,12 +43,26 @@ nav ul li{
     display: inline;
     padding-left: 5%;
 }
-nav ul li a{
+.internal{
     text-decoration: none;
     color: #09478a;
 }
-nav ul li a:hover{
+.internal:hover{
     color: #052240;
+}
+.external{
+    text-decoration: none;
+    color: #052240;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.external:hover{
+    text-decoration: underline;
+}
+.arrow{
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0;
 }
 section{
     padding-top: 10vh;
