@@ -37,6 +37,7 @@
             <h2><span class="tipp">Commit:</span> A point that you have saved your projects progress. Every commit receives a new ID and can be reverted to later</h2>
             <h2><span class="tipp">Head:</span> The <span class="tipp">commit</span> your are currently viewing/modifying</h2>
             <h2><span class="tipp">Branch:</span> A side section of a project where new things can be tested without affecting the main project. Kind of like a repository inside a repository. Can be <span class="tipp">merged</span> to the main branch of the project later to include changes</h2>
+            <h2><span class="tipp">Master Branch:</span> The main <span class="tipp">branch</span> of the project. This will be what you publish when you are finished</h2>
             <br>
             <h2><span class="warning">Info:</span> All commands are prefaced with <span class="warning">"git"</span> and usually used inside the VScode terminal</h2>
         </section>
@@ -46,35 +47,32 @@
             <img src="../img/git init.png" alt="">    
         </section>
         <section id="status">
-            <h1>ls:</h1>
-            <h2>Lists files in current directory</h2>
-            <img src="../img/ls.png" alt="">
-            <h1>ls-a:</h1>
-            <h2>Lists all files in current directory, including hidden files</h2>
-            <img src="../img/ls-a.png" alt="">
+            <h1>status:</h1>
+            <h2>Shows if all your progress has been added/commited and gives an overall update on the status of your work</h2>
+            <img src="../img/git status.png" alt="">
         </section>
-        <section id="cd">
-            <h1>cd:</h1>
-            <h2>Changes directory. Navigation works like links in HTML</h2>
-            <img src="../img/cd.png" alt="">
+        <section id="add">
+            <h1>add:</h1>
+            <h2>Adds(tracks) your progress to your repository. <span class="break"></span><span class="tipp">Tipp: "add ."</span> adds all changes to your repository. Specific files can be added by using <span class="tipp">"add &#60;file&#62;"</span></h2>
+            <img src="../img/git add.png" alt="">
         </section>
-        <section id="mkdir">
-            <h1>mkdir:</h1>
-            <h2>Creates new folder in current directory</h2>
-            <img src="../img/mkdir.png" alt="">
+        <section id="commit">
+            <h1>commit -m "message":</h1>
+            <h2>Creates a new <span class="tipp">commit</span> so save your changes to the repository. A message can be left between the <span class="tipp">" "</span></h2>
+            <img src="../img/git commit.png" alt="">
         </section>
-        <section id="touch">
-            <h1>touch</h1>
-            <h2>Creates new file in current directory</h2>
-            <img src="../img/touch.png" alt="">
+        <section id="diff">
+            <h1>diff</h1>
+            <h2>Shows the changes you have made since your last <span class="tipp">commit</span></h2>
+            <img src="../img/git diff.png" alt="">
         </section>
-        <section id="rm">
-            <h1>rm</h1>
-            <h2>Removes file with specified name in current directory</h2>
-            <img src="../img/rm.png" alt="">
-            <h1>rm-r</h1>
-            <h2>Removes folder with specified name in current directory</h2>
-            <img src="../img/rm-r.png" alt="">
+        <section id="log">
+            <h1>log</h1>
+            <h2>Shows the history of your <span class="tip">commits</span></h2>
+            <img src="../img/git log.png" alt="">
+            <h1>log --oneline</h1>
+            <h2>Shows the <span class="tipp">log</span> in a more compact format. <span class="tipp">--decoreate</span> can be used after to highlight more things</h2>
+            <img src="../img/git log oneline.png" alt="">
         </section>
         <section id="mv">
             <h1>mv</h1>
