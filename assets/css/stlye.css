@@ -1,0 +1,66 @@
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    background: #ABB8C3;
+}
+section{
+    height: 100vh;
+}
+h1{
+    margin: 0 0 5vh 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #052240;
+    font-weight: 700;
+    padding-top: 10vh;
+}
+div{
+    background: url(../img/clippy.png) center/cover no-repeat;
+    margin-top: 10vh;
+    height: 70vh;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+h2{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #09478a;
+    padding: 5vh 5% 0 5%;
+    background: #F6F4A5;
+    position: absolute;
+    width: 60%;
+    height: 30vh;
+    left: 27.5%;
+}
+a{
+    position: absolute;
+    text-decoration: none;
+    color: #09478a;
+    background: #ABB8C3;
+    border: 2px solid #052240;
+    border-radius: 15%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+a:hover{
+    box-shadow: 0px 0px 4px 2px #052240;
+    color: #052240;
+}
+a:nth-of-type(1){
+    left: 30%;
+    top: 27%;
+    padding: 5vh 7%;
+}
+a:nth-of-type(2){
+    left: 65%;
+    top: 27%;
+    padding: 5vh 13%;
+}
