@@ -1,0 +1,100 @@
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    background: #ABB8C3;
+    position: relative;
+}
+.clippy{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    color: #052240;
+    background: #f6f4a5;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1vh 2%;
+    border: 2px solid #09478a;
+    border-radius: 10%;
+}
+.clippy:hover{
+    box-shadow: 0px 0px 4px 2px #09478a;
+}
+nav{
+    background: #ABB8C3;
+    height: 5.5vh;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid #09478a;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 1vh 0 0 0;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    padding-left: 2%;
+}
+.internal{
+    text-decoration: none;
+    color: #09478a;
+}
+.internal:hover{
+    color: #052240;
+}
+.external{
+    text-decoration: none;
+    color: #052240;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.external:hover{
+    text-decoration: underline;
+}
+.arrow{
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0;
+}
+#info{
+    padding-top: 15vh;
+}
+section{
+    padding-top: 10vh;
+    border-bottom: 2px dashed #09478a;
+}
+h1{
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #052240;
+    font-weight: 700;
+}
+img{
+    width: 70%;
+    margin-left: 15%;
+}
+h2{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #09478a;
+    padding: 0 5%;
+}
+.warning{
+    color: rgb(216, 61, 53);
+}
+.break{
+    display: block;
+}
+.tipp{
+    color: rgb(86, 163, 189);
+}

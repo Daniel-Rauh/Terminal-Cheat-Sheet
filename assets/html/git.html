@@ -6,10 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Cheat Sheet</title>
     <link rel="stylesheet" href="../css/style-git.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#info" class="external">Git:</a></li>
+                <li><a href="#init" class="internal">init</a></li>
+                <li><a href="#status" class="internal">status</a></li>
+                <li><a href="#add" class="internal">add</a></li>
+                <li><a href="#commit" class="internal">commit</a></li>
+                <li><a href="#diff" class="internal">diff</a></li>
+                <li><a href="#log" class="internal">log</a></li>
+                <li><a href="#branch" class="internal">branch</a></li>
+                <li><a href="#merge" class="internal">merge</a></li>
+                <li><a href="#reset" class="internal">reset</a></li>
+                <li><a href="#remote" class="internal">remote</a></li>
+                <li><a href="#push" class="internal">push</a></li>
+                <li><a href="#pull" class="internal">pull</a></li>
+                <li><a href="#clone" class="internal">clone</a></li>
+                <li><a href="terminal.html" class="external"><span class="arrow">&#x3e;</span>  Terminal</a></li>
+            </ul>
+        </nav>
+        <a href="../../index.html" class="clippy">Visit Clippy!</a>
+        <section id="info">
+            <h1>Git Terminology:</h1>
+            <h2><span class="tipp">Repository:</span> A container that includes all files and folders of your project</h2>
+            <h2><span class="tipp">Commit:</span> A point that you have saved your projects progress. Every commit receives a new ID and can be reverted to later</h2>
+            <h2><span class="tipp">Head:</span> The <span class="tipp">commit</span> your are currently viewing/modifying</h2>
+            <h2><span class="tipp">Branch:</span> A side section of a project where new things can be tested without affecting the main project. Kind of like a repository inside a repository. Can be <span class="tipp">merged</span> to the main branch of the project later to include changes</h2>
+            <br>
+            <h2><span class="warning">Info:</span> All commands are prefaced with <span class="warning">"git"</span> and usually used inside the VScode terminal</h2>
+        </section>
+        <section id="init">
+            <h1>init:</h1>
+            <h2>Initiates new local repository for project</h2>
+            <img src="../img/git init.png" alt="">    
+        </section>
+        <section id="status">
+            <h1>ls:</h1>
+            <h2>Lists files in current directory</h2>
+            <img src="../img/ls.png" alt="">
+            <h1>ls-a:</h1>
+            <h2>Lists all files in current directory, including hidden files</h2>
+            <img src="../img/ls-a.png" alt="">
+        </section>
+        <section id="cd">
+            <h1>cd:</h1>
+            <h2>Changes directory. Navigation works like links in HTML</h2>
+            <img src="../img/cd.png" alt="">
+        </section>
+        <section id="mkdir">
+            <h1>mkdir:</h1>
+            <h2>Creates new folder in current directory</h2>
+            <img src="../img/mkdir.png" alt="">
+        </section>
+        <section id="touch">
+            <h1>touch</h1>
+            <h2>Creates new file in current directory</h2>
+            <img src="../img/touch.png" alt="">
+        </section>
+        <section id="rm">
+            <h1>rm</h1>
+            <h2>Removes file with specified name in current directory</h2>
+            <img src="../img/rm.png" alt="">
+            <h1>rm-r</h1>
+            <h2>Removes folder with specified name in current directory</h2>
+            <img src="../img/rm-r.png" alt="">
+        </section>
+        <section id="mv">
+            <h1>mv</h1>
+            <h2>Moves file to specified folder. <span class="break"></span><span class="warning">Warning:</span> If folder does not exist file will be renamed and moved to last specified existing folder!</h2>
+            <img src="../img/mv.png" alt="">
+        </section>
+        <section id="cp">
+            <h1>cp</h1>
+            <h2>Copies file to specified directory. Giving a new filename instead of a directory copies file in same folder with new name <span class="break"></span><span class="warning">Warning:</span> If specified folder does not exist file will be renamed and copied to last specified existing folder!</h2>
+            <img src="../img/cp.png" alt="">
+        </section>
+        <section id="man">
+            <h1>man</h1>
+            <h2>Opens manual for specified command. Gives additional info and variatons of specified command</h2>
+            <img src="../img/man.png" alt="">
+        </section>
+    </main>
 </body>
 
 </html>
