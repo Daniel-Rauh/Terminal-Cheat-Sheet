@@ -19,12 +19,12 @@ h1{
     font-size: 3rem;
     color: #052240;
     font-weight: 700;
-    padding-top: 10vh;
+    padding-top: 3vh;
 }
 div{
     background: url(../img/clippy.png) center/cover no-repeat;
     margin-top: 10vh;
-    height: 70vh;
+    height: 73vh;
     width: 80%;
     margin: auto;
     position: relative;
