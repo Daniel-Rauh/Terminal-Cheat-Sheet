@@ -98,3 +98,9 @@ h2{
 .tipp{
     color: rgb(86, 163, 189);
 }
+.green{
+    color: green;
+}
+.lowercase{
+    text-transform: lowercase;
+}

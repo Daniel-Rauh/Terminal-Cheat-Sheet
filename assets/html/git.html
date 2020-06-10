@@ -21,6 +21,7 @@
                 <li><a href="#diff" class="internal">diff</a></li>
                 <li><a href="#log" class="internal">log</a></li>
                 <li><a href="#branch" class="internal">branch</a></li>
+                <li><a href="#checkout" class="internal">checkout</a></li>
                 <li><a href="#merge" class="internal">merge</a></li>
                 <li><a href="#reset" class="internal">reset</a></li>
                 <li><a href="#remote" class="internal">remote</a></li>
@@ -43,7 +44,7 @@
         </section>
         <section id="init">
             <h1>init:</h1>
-            <h2>Initiates new local repository for project</h2>
+            <h2>Initiates new local <span class="tipp">repository</span> for project</h2>
             <img src="../img/git init.png" alt="">    
         </section>
         <section id="status">
@@ -53,12 +54,12 @@
         </section>
         <section id="add">
             <h1>add:</h1>
-            <h2>Adds(tracks) your progress to your repository. <span class="break"></span><span class="tipp">Tipp: "add ."</span> adds all changes to your repository. Specific files can be added by using <span class="tipp">"add &#60;file&#62;"</span></h2>
+            <h2>Adds(tracks) your progress to your <span class="tipp">repository</span>. <span class="break"></span><span class="tipp">Tipp: "add ."</span> adds all changes to your <span class="tipp">repository</span>. Specific files can be added by using <span class="tipp">"add &#60;file&#62;"</span></h2>
             <img src="../img/git add.png" alt="">
         </section>
         <section id="commit">
             <h1>commit -m "message":</h1>
-            <h2>Creates a new <span class="tipp">commit</span> so save your changes to the repository. A message can be left between the <span class="tipp">" "</span></h2>
+            <h2>Creates a new <span class="tipp">commit</span> to save your changes to the <span class="tipp">repository</span>. A message can be left between the <span class="tipp">" "</span></h2>
             <img src="../img/git commit.png" alt="">
         </section>
         <section id="diff">
@@ -68,26 +69,63 @@
         </section>
         <section id="log">
             <h1>log</h1>
-            <h2>Shows the history of your <span class="tip">commits</span></h2>
+            <h2>Shows the history of your <span class="tipp">commits</span><span class="break"></span><span class="tipp">Tipp:</span> Currently selected <span class="tipp">commit</span> will be denoted by <span class="tipp">head</span> next to the id</h2>
             <img src="../img/git log.png" alt="">
             <h1>log --oneline</h1>
             <h2>Shows the <span class="tipp">log</span> in a more compact format. <span class="tipp">--decoreate</span> can be used after to highlight more things</h2>
             <img src="../img/git log oneline.png" alt="">
         </section>
-        <section id="mv">
-            <h1>mv</h1>
-            <h2>Moves file to specified folder. <span class="break"></span><span class="warning">Warning:</span> If folder does not exist file will be renamed and moved to last specified existing folder!</h2>
-            <img src="../img/mv.png" alt="">
+        <section id="branch">
+            <h1>branch "name"</h1>
+            <h2>Creates a new branch with the specified name</h2>
+            <img src="../img/git branch.png" alt="">
+            <h1>branch -a</h1>
+            <h2>Shows a list of all branches. Currently selected branch will be shown in the color <span class="green">green</span> and marked with a *-symbol</h2>
+            <img src="../img/git branch -a.png" alt="">
+            <h1>branch -<span class="lowercase">d</span></h1>
+            <h2>Deletes a branch <span class="break"></span><span class="tipp">Tipp:</span> If branch has not been merged yet <span class="tipp">-D</span> has to be used</h2>
+            <img src="../img/git branch -d.png" alt="">
         </section>
-        <section id="cp">
-            <h1>cp</h1>
-            <h2>Copies file to specified directory. Giving a new filename instead of a directory copies file in same folder with new name <span class="break"></span><span class="warning">Warning:</span> If specified folder does not exist file will be renamed and copied to last specified existing folder!</h2>
-            <img src="../img/cp.png" alt="">
+        <section id="checkout">
+            <h1>checkout</h1>
+            <h2>Switches between <span class="tipp">branches</span></h2>
+            <img src="../img/git checkout.png" alt="">
         </section>
-        <section id="man">
-            <h1>man</h1>
-            <h2>Opens manual for specified command. Gives additional info and variatons of specified command</h2>
-            <img src="../img/man.png" alt="">
+        <section id="merge">
+            <h1>merge</h1>
+            <h2>Merges <span class="tipp">branch</span> into currently selected <span class="tipp">branch</span>. Changes made will be updated</h2>
+            <img src="../img/git merge.png" alt="">
+        </section>
+        <section id="reset">
+            <h1>reset --hard head</h1>
+            <h2>Deletes <span class="tipp">uncommited</span> changes and sets <span class="tipp">repository</span> back to <span class="tipp">head</span><span class="break"></span><span class="warning">Warning:</span> Changes will be lost and cannot be restored!</h2>
+            <img src="../img/git reset head.png" alt="">
+            <h1>reset --hard "id"</h1>
+            <h2>Deletes changes and sets <span class="tipp">repository</span> back to selected <span class="tipp">commit</span><span class="break"></span><span class="warning">Warning:</span> Changes will be lost and cannot be restored!</h2>
+            <img src="../img/git reset id.png" alt="">
+        </section>
+        <section id="remote">
+            <h1>remote add origin "link"</h1>
+            <h2>Connect local <spann class="tipp">repository</spann> to an online <span class="tipp">repository</span> under specified link</h2>
+            <img src="../img/git remote add.png" alt="">
+            <h1>remote -v</h1>
+            <h2>Show address of online <span class="tipp">repository</span></h2>
+            <img src="../img/git remote -v.png" alt="">
+        </section>
+        <section id="push">
+            <h1>push</h1>
+            <h2>Update <span class="tipp">online repository</span> to match <span class="tipp">local repository</span></h2>
+            <img src="../img/git push.png" alt="">
+        </section>
+        <section id="pull">
+            <h1>pull</h1>
+            <h2>Update <span class="tipp">local repository</span> to match <span class="tipp">online repository</span></h2>
+            <img src="../img/git pull.png" alt="">
+        </section>
+        <section id="clone">
+            <h1>clone "link"</h1>
+            <h2>Use in <span class="warning">terminal</span> to create copy of an online project in current working directory <span class="break"></span><span class="tipp">Tipp:</span> Links can be obtained from github.com</h2>
+            <img src="../img/git clone.png" alt="">
         </section>
     </main>
 </body>
